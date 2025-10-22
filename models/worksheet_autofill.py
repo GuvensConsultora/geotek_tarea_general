@@ -16,8 +16,8 @@ class WorksheetStudio(models.Model):
     def _find_task_field_name(self):
         '''Devuelve el nombre del campo m2o hacia project.task en el modelo Studio.'''
         # 1) nombre común en Studio
-        if "x_studio_task_id" in self._fields and self._fields["x_studio_task_id"].comodel_name == "project.task":
-            return "x_studio_task_id"
+        if "x_project_task_id" in self._fields and self._fields["x_project_task_id"].comodel_name == "project.task":
+            return "x_project_task_id"
         # 2) detectar cualquier m2o → project.task
         for fname, f in self._fields.items():
             if getattr(f, "type", None) == "many2one" and getattr(f, "comodel_name", "") == "project.task":
