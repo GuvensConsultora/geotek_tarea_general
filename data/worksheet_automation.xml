@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Automation: al crear, autocompletar -->
+  <record id="ba_ws_autofill_on_create" model="base.automation">
+    <field name="name">WS Autofill on Create</field>
+    <field name="model_id" ref="model_x_project_task_worksheet_template_4"/>
+    <field name="active">True</field>
+    <field name="trigger">on_create</field>
+    <field name="state">code</field>
+    <field name="code">records.action_fill_from_task()</field>
+  </record>
+</odoo>
