@@ -5,7 +5,7 @@
     <field name="name">x_ws.fill.from.task.button</field>
     <field name="model">x_project_task_worksheet_template_4</field>
     <!-- Reemplaza este ref por el External ID real de TU vista Studio -->
-    <field name="inherit_id" ref="x_x_project_task_worksheet_template_4_view_form"/>
+    <field name="inherit_id" ref="industry_fsm_report.x_project_task_worksheet_template_4_ir_ui_view_1"/>
     <field name="priority" eval="99"/>
     <field name="mode">extension</field>
     <field name="arch" type="xml">
