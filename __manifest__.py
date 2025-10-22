@@ -1,6 +1,6 @@
 {
     "name": "Task Worksheet Autofill",
-    "version": "18.0.1.0.0",
+    "version": "18.0",
     "author": "Tu Empresa",
     "license": "LGPL-3",
     "category": "Project",
@@ -9,6 +9,6 @@
         "views/worksheet_button.xml",
         "data/worksheet_automation.xml"
     ],
-    "installable": true,
-    "application": false
+    "installable": True,
+    "application": False
 }
