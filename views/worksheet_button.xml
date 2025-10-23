@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <!-- Ajusta 'inherit_id' si el externo difiere en tu base -->
   <record id="view_ws_button_inherit" model="ir.ui.view">
     <field name="name">x_ws.fill.from.task.button</field>
     <field name="model">x_project_task_worksheet_template_4</field>
-    <!-- Reemplaza este ref por el External ID real de TU vista Studio -->
     <field name="inherit_id" ref="industry_fsm_report.x_project_task_worksheet_template_4_ir_ui_view_1"/>
     <field name="priority" eval="99"/>
     <field name="mode">extension</field>
     <field name="arch" type="xml">
-      <xpath expr="//form" position="inside">
+      <xpath expr="//header" position="inside">
         <button name="action_fill_from_task"
-                type="action"
+                type="object"
                 class="oe_highlight"
                 string="Autocompletar desde Tarea"
                 help="Copia datos desde la tarea origen"/>
