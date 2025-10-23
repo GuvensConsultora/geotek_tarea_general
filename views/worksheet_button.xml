@@ -7,7 +7,7 @@
     <field name="priority" eval="99"/>
     <field name="mode">extension</field>
     <field name="arch" type="xml">
-      <xpath expr="//header" position="inside">
+      <xpath expr="//sheet" position="inside">
         <button name="action_fill_from_task"
                 type="object"
                 class="oe_highlight"
