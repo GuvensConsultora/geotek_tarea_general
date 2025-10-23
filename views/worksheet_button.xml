@@ -11,7 +11,7 @@
     <field name="arch" type="xml">
       <xpath expr="//form" position="inside">
         <button name="action_fill_from_task"
-                type="object"
+                type="action"
                 class="oe_highlight"
                 string="Autocompletar desde Tarea"
                 help="Copia datos desde la tarea origen"/>
