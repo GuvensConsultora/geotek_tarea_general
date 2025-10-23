@@ -4,7 +4,7 @@
     "author": "Tu Empresa",
     "license": "LGPL-3",
     "category": "Project",
-    "depends": ["base", "project", "web"],
+    "depends": ["base", "project", "web","industry_fsm_report"],
     "data": [
         "views/worksheet_button.xml",
         "data/worksheet_automation.xml"
