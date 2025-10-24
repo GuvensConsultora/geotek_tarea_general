@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <record id="ws_form_inherit_custom" model="ir.ui.view">
@@ -22,6 +21,4 @@
       <!-- </xpath> -->
     </field>
   </record>
-</odoo>
-
 </odoo>
