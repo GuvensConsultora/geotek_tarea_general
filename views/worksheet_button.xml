@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id="ws_form_inherit_custom" model="ir.ui.view">
-    <field name="name">ws.form.inherit.custom</field>
-    <field name="model">x_project_task_worksheet_template_4</field>
-    <!-- usa el xmlid EXACTO que ves: -->
-    <field name="inherit_id" ref="studio_customization.odoo_studio_template_2b3cc336-a2f0-4946-9740-efc59d2d53ed"/>
-    <field name="priority" eval="100"/> <!-- que cargue después de Studio -->
-    <field name="arch" type="xml">
-      <!-- Ejemplo: crear <header> y colgar un botón -->
-      
-    </field>
-  </record>
+  <data>
+    <record id="ID_DEL_ANCLA" model="ir.ui.view">
+      <field name="name">anchor inherit (no-op)</field>
+      <field name="model">x_project_task_worksheet_template_4</field> <!-- MODEL -->
+      <field name="inherit_id" ref="industry_fsm_report.x_project_task_worksheet_template_4_ir_ui_view_1"/> <!-- BASE_XMLID -->
+      <field name="priority" eval="100"/> <!-- carga después de la base -->
+      <field name="arch" type="xml">
+        <xpath expr="//form" position="inside">
+          <!-- no-op: ancla para heredados posteriores -->
+        </xpath>
+      </field>
+    </record>
+  </data>
 </odoo>
