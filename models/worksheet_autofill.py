@@ -25,36 +25,9 @@ class WorksheetStudio(models.Model):
         return None
 
     def action_fill_from_task(self):
-        '''Copia campos desde la tarea origen hacia la hoja de trabajo.'''
-        for rec in self:
-            task_field = rec._find_task_field_name()
-            task = getattr(rec, task_field, False) if task_field else False
-            if not task:
-                # permitir pasar task_id vía contexto si se abre desde tarea
-                ctx_task_id = rec.env.context.get("task_id")
-                if ctx_task_id:
-                    task = rec.env["project.task"].browse(ctx_task_id)
-            if not task:
-                continue
+        return True
 
-            # --- MAPEO: ajusta según tus campos Studio ---
-            mvals = {}
-            # Ejemplo: comitente (m2o res.partner) desde partner de la tarea
-            if "x_studio_comitente" in rec._fields:
-                mvals["x_studio_comitente"] = task.partner_id.id or False
-
-            # Otros ejemplos (descomentar y adaptar si existen en tu Studio):
-            # if "x_studio_responsable" in rec._fields:
-            #     mvals["x_studio_responsable"] = task.user_id.id or False
-            # if "x_studio_proyecto" in rec._fields:
-            #     mvals["x_studio_proyecto"] = task.project_id.id or False
-            # if "x_studio_nombre_tarea" in rec._fields:
-            #     mvals["x_studio_nombre_tarea"] = task.name
-
-            # Escribe solo campos presentes
-            if mvals:
-                rec.write(mvals)
-
+    
     @api.model_create_multi
     def create(self, vals_list):
         recs = super().create(vals_list)
