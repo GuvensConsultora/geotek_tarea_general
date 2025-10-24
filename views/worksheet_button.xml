@@ -8,7 +8,7 @@
       <field name="priority" eval="100"/> <!-- carga después de la base -->
       <field name="arch" type="xml">
         <xpath expr="//form" position="inside">
-          <!-- no-op: ancla para heredados posteriores -->
+          <h1>Hola Mundo</h1>
         </xpath>
       </field>
     </record>
