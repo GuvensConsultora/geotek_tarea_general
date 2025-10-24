@@ -8,16 +8,7 @@
     <field name="priority" eval="100"/> <!-- que cargue después de Studio -->
     <field name="arch" type="xml">
       <!-- Ejemplo: crear <header> y colgar un botón -->
-      <xpath expr="//form[1]" position="inside">
-        <header>
-          <button name="action_fill_from_task" type="object" string="Autocompletar"/>
-        </header>
-      </xpath>
-
-      <!-- Otro ejemplo (tu xpath actual en Studio apunta al primer h1): -->
-      <!-- <xpath expr="//form/sheet/h1[1]" position="after"> -->
-      <!--   <div class="alert alert-info">Mi bloque</div> -->
-      <!-- </xpath> -->
+      
     </field>
   </record>
 </odoo>
