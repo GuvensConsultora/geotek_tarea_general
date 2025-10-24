@@ -6,7 +6,7 @@
     "category": "Project",
     "depends": ["base", "project", "web","industry_fsm_report"],
     "data": [
-        "views/worksheet_button.xml",
+        #"views/worksheet_button.xml",
         "data/worksheet_automation.xml"
     ],
     "installable": True,
