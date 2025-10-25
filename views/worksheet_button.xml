@@ -4,7 +4,7 @@
     <record id="ID_DEL_ANCLA" model="ir.ui.view">
       <field name="name">anchor inherit (no-op)</field>
       <field name="model">x_project_task_worksheet_template_4</field> <!-- MODEL -->
-      <field name="inherit_id" ref="industry_fsm_report.x_project_task_worksheet_template_4_ir_ui_view_1"/> <!-- BASE_XMLID -->
+      <field name="inherit_id" ref="x_project_task_worksheet_template_4"/> <!-- BASE_XMLID -->
       <field name="priority" eval="100"/> <!-- carga después de la base -->
       <field name="arch" type="xml">
         <xpath expr="//form/sheet" position="inside">
