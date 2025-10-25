@@ -11,7 +11,7 @@ from odoo import api, fields, models
 #   - Hook en create() para autocompletar al crear
 
 class WorksheetStudio(models.Model):
-    _inherit = "x_project_task_worksheet_template_4"
+    _inherit = "x_project_task_worksheet_template_4_ir_ui_view_1"
 
     def _find_task_field_name(self):
         '''Devuelve el nombre del campo m2o hacia project.task en el modelo Studio.'''
