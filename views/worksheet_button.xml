@@ -9,7 +9,7 @@
       <field name="arch" type="xml">
         <xpath expr="//form/sheet" position="before">
            <header>
-            <button type="action"
+            <button type="object"
                     name="%(sa_ws_anchor)d"
                     class="btn btn-secondary"
                     string="Ancla"
