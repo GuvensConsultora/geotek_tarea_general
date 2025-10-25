@@ -9,7 +9,7 @@
       <field name="arch" type="xml">
         <xpath expr="//form/sheet" position="inside">
             <button type="action"
-                    name="%(sa_ws_anchor)d"
+                    name="action_fill_from_task"
                     class="btn btn-secondary"
                     string="Ancla"
                     help="Botón ancla: listo para cablear más adelante."/>
