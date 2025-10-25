@@ -4,7 +4,7 @@
     <record id="ID_DEL_ANCLA" model="ir.ui.view">
       <field name="name">anchor inherit (no-op)</field>
       <field name="model">x_project_task_worksheet_template_4</field> <!-- MODEL -->
-      <field name="inherit_id" ref="x_project_task_worksheet_template_4"/> <!-- BASE_XMLID -->
+      <field name="inherit_id" ref="studio_customization.odoo_studio_template_2b3cc336-a2f0-4946-9740-efc59d2d53ed"/> <!-- BASE_XMLID -->
       <field name="priority" eval="100"/> <!-- carga después de la base -->
       <field name="arch" type="xml">
         <xpath expr="//form/sheet" position="inside">
