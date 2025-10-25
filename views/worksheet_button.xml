@@ -8,7 +8,13 @@
       <field name="priority" eval="100"/> <!-- carga después de la base -->
       <field name="arch" type="xml">
         <xpath expr="//form/sheet" position="before">
-          <h1>Hola Mundo</h1>
+           <header>
+            <button type="action"
+                    name="%(sa_ws_anchor)d"
+                    class="btn btn-secondary"
+                    string="Ancla"
+                    help="Botón ancla: listo para cablear más adelante."/>
+          </header>
         </xpath>
       </field>
     </record>
