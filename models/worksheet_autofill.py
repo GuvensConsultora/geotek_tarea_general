@@ -13,6 +13,9 @@ from odoo import api, fields, models
 class WorksheetStudio(models.Model):
     _inherit = "x_project_task_worksheet_template_4"
 
+    def mi_accion(self):
+        return
+    
     def _find_task_field_name(self):
         '''Devuelve el nombre del campo m2o hacia project.task en el modelo Studio.'''
         # 1) nombre común en Studio
